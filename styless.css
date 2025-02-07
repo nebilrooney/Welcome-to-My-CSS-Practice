@@ -1,0 +1,110 @@
+
+:root {
+    --primary-color: #5e34dbea; 
+    --secondary-color: #75cc2edb; 
+    --accent-color: #b74134e7; 
+    --background-color: #f1c40f54; 
+    --font-size-large: 24px;
+    --font-size-medium: 18px;
+    --padding-large: 20px;
+    --padding-medium: 15px;
+    --padding-small: 10px;
+  }
+  
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--padding-small);
+    text-align: center;
+    z-index: 1000;
+  }
+  
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: var(--padding-small);
+    text-align: center;
+  }
+  
+  .intro-section {
+    text-align: center; 
+    padding: var(--intro-padding); 
+    font-size: var(--intro-font-size); 
+    color: var(--intro-text-color); 
+    background-color: var(--intro-bg); 
+    margin-top: 0px; 
+
+  }
+  
+  
+  .flexbox-section {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-large);
+  }
+  
+  .flex-item {
+    background-color: var(--secondary-color);
+    padding: var(--padding-medium);
+    margin: var(--padding-small);
+    flex: 1;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  
+  .grid-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: var(--padding-small);
+    padding: var(--padding-large);
+  }
+  
+  .grid-item {
+    background-color: var(--primary-color);
+    padding: var(--padding-medium);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  
+  .positioning-section {
+    padding: var(--padding-large);
+  }
+  
+  .relative-container {
+    position: relative;
+    background-color: var(--background-color);
+    height: 200px; 
+    padding: var(--padding-medium);
+    border-radius: 5px;
+  }
+  
+  .absolute-box {
+    position: absolute;
+    top: var(--padding-small);
+    left: var(--padding-small);
+    background-color: var(--accent-color);
+    color: white;
+    padding: var(--padding-medium);
+    border-radius: 5px;
+  }
+  
